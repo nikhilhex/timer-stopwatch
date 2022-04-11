@@ -1,10 +1,19 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer/Stopwatch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+</head>
+<body>
 
 
 
 <h1>Timer/Stopwatch</h1>
-<select>
+<select class="form-select" id="select">
 <option value="timer">Timer</option>
 <option value="stopwatch">Stopwatch</option>
 </select>
@@ -12,13 +21,18 @@
 
 <div id="timer">
   <h1>00:00:00</h1>
-  <button class="stop">Stop Timer</button>
-  <button class="set">Set Timer</button>
+  <button class="btn btn-primary stop">Stop Timer</button>
+  <button class="btn btn-primary set">Set Timer</button>
 </div>
 
 <div id="stopwatch">
   <h1>00:00:00</h1>
-  <button class="start">Start</button>
-  <button class="stop">Stop</button>
-  <button class="reset">Reset</button>
+  <button class="btn btn-primary start">Start</button>
+  <button class="btn btn-primary stop">Stop</button>
+  <button class="btn btn-primary reset">Reset</button>
 </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
